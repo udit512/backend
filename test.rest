@@ -1,0 +1,42 @@
+POST https://disease-prediction-mightybit.herokuapp.com/signup
+Content-Type: application/json
+
+{
+    "name":"dhanush123",
+    "username":"1234dhanushadfsjk",
+    "password":"12345",
+    "medicines" : [{
+      "_id": "5fb6a990f1afc07481f8e29b"
+    }]
+}
+
+###
+POST http://localhost:8000/BMI
+Content-Type: application/json
+
+
+{
+  "userId": "5fb76bddc7e6b666392b54ce",
+  "age":31,
+  "weight":31,
+  "height":31
+}
+
+
+
+###
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "username":"1234dhanushadfsjk",
+    "password":"12345"
+}
+
+###
+POST http://localhost:8000/addMedicine
+Content-Type: application/json
+
+{
+    "medicine_name" : "abcd"
+}
